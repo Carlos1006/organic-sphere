@@ -2,7 +2,7 @@
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "webpack --config ./bundler/webpack.prod.js",
+    "build": "webpack --config ./bundler/webpack.prod.js --port 8081",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "glslify-loader": "^2.0.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
+    "internal-ip": "^8.0.0",
     "mini-css-extract-plugin": "^2.3.0",
     "portfinder-sync": "0.0.2",
     "raw-loader": "^4.0.2",

@@ -19,7 +19,7 @@ module.exports = merge(
             host: 'local-ip',
             port: portFinderSync.getPort(8080),
             open: true,
-            https: true,
+            https: false,
             allowedHosts: 'all',
             hot: false,
             watchFiles: ['src/**', 'static/**'],
@@ -38,7 +38,7 @@ module.exports = merge(
             {
                 const port = devServer.options.port
                 const https = devServer.options.https ? 's' : ''
-                const localIp = ip.v4.sync()
+                const localIp = '192.168.31.164' //ip.v4.sync()
                 const domain1 = `http${https}://${localIp}:${port}`
                 const domain2 = `http${https}://localhost:${port}`
                 

@@ -22,9 +22,7 @@ export default class Experience
         if(Experience.instance)
         {
             return Experience.instance
-        }
-        Experience.instance = this
-
+        }     
         // Options
         this.targetElement = _options.targetElement
 
